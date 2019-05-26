@@ -1,0 +1,251 @@
+ai-bolit.php
+------------
+
+http://www.revisium.com/aibo/
+audit@revisium.com
+
+Changes 20181107
+- Added new 'sn' field in json report. It contains string identifier of found malware.
+- Updated malware signatures
+
+Changes 20181009
+- Updated malware database
+
+Changes 20180912
+- Enhanced malware
+- Bugfixes
+
+Changes 20180830
+- External malware db supported via --avdb= command line argument
+
+Changes 20180709
+- Added command line argument --listing=stdin to read listing of files to scan from stdin
+- Added command line argument --json-stdout to print out json report directly to the stdout
+- Improved malware snippets
+- Removed obsolete report sections
+- Updated malware DB
+
+Changes 20180627
+- Added --listing=... command line argument to scan the list of files loaded from specified file
+- Added --no-html command line argument to suppress html report generation
+- Removed obsolete report entries
+- Updated malware DB
+
+Changes 20180616
+- Improved malicious snippet representation in the report
+- Updated malware DB
+
+Changes 20180511
+- Added --deobfuscate parameter which enables auto-decode of obfuscated scripts
+- Updated malware DB
+
+Changes 20180501
+- Updated malware DB
+
+Changes 20180419
+- Updated malware DB
+
+Changes 20180402
+- Fixed Drupal version checker
+- Added Drupal vulnerability check (Drupageddon 2)
+- Updated malware DB
+
+Changes 20180325
+- Fixed bug with source code notmalization
+- Updated malware DB
+- Added new command line parameter --user= which specifies the user id which the scanner will be running under.
+
+Changes 20180211
+- Updated malware DB
+
+Changes 20180124
+- Updated malware DB
+
+Changes 20180122
+- Updated malware DB
+- Optimized signature database
+
+Changes 20171210
+- Updated malware DB
+- Added dot (".") to the --scan= parameter in order to scan files without extensions
+
+Changes 20171116
+- Updated malware DB
+
+Changes 20171030
+- Updated malware DB
+
+Changes 20171019
+- Improved snippets of detected malware
+- Updated malware DB
+
+Changes 20171003
+- Fixed deobfuscation bug
+- Updated malware DB
+
+Changes 20170930
+- Updated malware DB
+
+Changes 20170925
+- Updated malware DB
+
+Changes 20170904
+- Updated malware DB
+- Deobfuscation of the source code
+
+Changes 20170820
+- Updated malware DB
+- Fixed signatures DB
+
+Changes 20170811
+- Updated malware DB
+
+Changes 20170803
+- Updated malware DB
+
+Changes 20170703
+- Fixed minor bug in several signatures
+- Updated malware DB
+
+Changes 20170626
+- Improved singature optimization algo
+- Updated malware DB
+
+Changes 20170612
+- Added --smart parameter in the command line
+- Updated malware DB
+
+Changes 20170605
+- Added vulnerabilities to json report
+- Updated malware DB
+
+Changes 20170527
+- New viruses signatures
+
+Changes 20170519
+- Fixed encoding in the report
+
+Changes 20170504
+- New virus signatures
+- External php-handlers for AI-BOLIT integration
+- Fixed plain text report
+- External file to track the scanning progress
+- New json-format scanning report 
+
+Changes 20170301
+- Reworked singatures to reduce false positives
+- Added virus signatures and new whitelist files
+
+Changes 20170217
+- Added Joomla PHPMailer vulnerability discover
+- Fixed vBulletin version detection
+- Scan speedup using smart scan 
+- Reduced amount of false positives
+- Added virus signatures and new whitelist files
+
+Changes 20170110
+- Added virus signatures and new whitelist files
+- PHPMailer vulnerability is detected
+
+Changes 20161225
+- Added virus signatures and new whitelist files
+- Optimized and improved scanning process
+
+Changes 20161127
+- Added virus signatures and new whitelist files
+
+Changes 20161119
+- Added virus signatures and new whitelist files
+- Fixed snippets in ai-bolit script
+
+Changes 20161110
+- Added virus signatures and new whitelist files
+- Fixed vps_docroot.php script
+
+Changes 20161011
+- Added virus signatures and new whitelist files
+
+Changes 20161024
+- Added virus signatures and new whitelist files
+
+Changes 20160817
+- Added virus signatures and new whitelist files
+- Some minor report cleanups
+
+Changes in 20160720
+- Added virus signatures and new whitelist files
+
+Changes in 20160701
+- Added virus signatures and new whitelist files
+
+Changes in 20160503
+- Added php7 and pht extensions in mandatory list to scan
+- Added virus signatures and new whitelist files
+
+Changes in 20160312
+- Fixed sorting order in report
+- Added virus signatures and new whitelist files
+
+Changes in 20160305
+- Added new command line argument --scan to scan particular extensions
+- New whitelist approach to filter false-positives. Please ensure that your PHP.ini has short_open_tag=on (or launch scanner with the following command short_open_tag=on (php -d short_open_tag=on ai-bolit.php ...)
+- Added new signatures
+- Minor bugfixes
+
+Changes in 20160227
+- New whitelist approach to filter false-positives. Please ensure that your PHP.ini has short_open_tag=on (or launch scanner with the following command short_open_tag=on (php -d short_open_tag=on ai-bolit.php ...)
+- added new signatures
+
+Changes in 20160219
+- fixed issue in whitelisting mechanism. Need to set short_open_tag=on while running ai-bolit (php -d short_open_tag=on ai-bolit.php ...)
+- added new signatures of malware 
+- added new CMSes to whitelist database
+
+Changes in 20160202
+- added new whitelist 
+- added new malware signatures
+- new scanner international version
+
+...
+
+Changes in 20130201
+
+- new signatures added
+- report is protected from SE indexing
+- report file name includes randomly generated number against bruteforce protection
+- added wordpress 3.5.1 into .aknown list
+
+
+Changes in 20130122 
+
+- new signatures added
+- added known files for instant cms and invision power board cms
+- hidden files detection
+- bugfix
+
+
+Changes in 201301221
+
+- flexible patterns to find shell and malicious code 
+- extended mechanism for exceptions
+- console report now has a statistics
+- bugfix
+
+
+Changes in 20121106
+
+- new signatures
+- search "sensitive" files which are not in safe
+- bugfix
+
+
+Changes in 20121014
+- added 170 new signatures
+- symlinks are skipped
+- php info added
+- checn for php build version
+- improved external include analysis
+- report file renamed: AI-BOLIT-REPORT-<дата>_<время>.html
+- improved scanning progress
+
+...
