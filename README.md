@@ -32,6 +32,17 @@ Full scan (recommended):
 5. copy file AI-BOLIT-REPORT-<date>-<time>.html from server to your local PC and open it in a browser
 
 ---
+Easy Instruction ( My Working envoirment is "cat /etc/redhat-release" >>>> "CentOS Linux release 7.7.1908 (Core)" )
+
+$ wget https://github.com/KashifHK123/AI-Bolit/raw/master/ai-bolit/AIBOLIT-WHITELIST.db && wget https://github.com/KashifHK123/AI-Bolit/raw/master/ai-bolit/ai-bolit.php
+$ php ai-bolit.php
+
+if see " Segmentation fault " it's cause is PHP-Opcache Extention for fix it run this command 
+$ php -n -d extension=/usr/lib64/php/modules/opcache.so -q ai-bolit.php
+or
+$ php -n -d extension=/usr/lib64/php/modules/opcache.so -q ai-bolit.php /some/path/to/scan
+
+---
 
 If you don't know how to analyze the report, or you need to remove malicious code or protect your website from hackers, email us ai@revisium.com. 
 
